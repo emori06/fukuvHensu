@@ -25,17 +25,17 @@ namespace fukuvHensu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label1.Top = label1.Top - 10;
+            label1.Top = label1.Top - int.Parse(textBox2.Text);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            label1.Left = label1.Left - 10;
+            label1.Left = label1.Left - int.Parse(textBox1.Text);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            label1.Left = label1.Left + 10;
+            label1.Left = label1.Left + int.Parse(textBox1.Text);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace fukuvHensu
 
         private void button4_Click(object sender, EventArgs e)
         {
-            label1.Top = label1.Top + 10;
+            label1.Top = label1.Top + int.Parse(textBox2.Text);
         }
     }
 }
